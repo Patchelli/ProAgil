@@ -11,7 +11,7 @@ namespace ProAgil.API.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Sqlite:Autoincrement", true),
                     Local = table.Column<string>(nullable: true),
                     DataEvento = table.Column<string>(nullable: true),
                     Tema = table.Column<string>(nullable: true),
